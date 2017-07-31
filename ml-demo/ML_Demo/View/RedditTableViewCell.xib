@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13122.19" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.16"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" id="luh-hi-caR" customClass="RedditTableViewCell" customModule="ML_Demo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="101"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="luh-hi-caR" id="aY4-QE-lCA">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="100.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RxG-QU-zQs" userLabel="Title Label">
+                        <rect key="frame" x="72" y="8" width="295" height="21"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PjF-fy-Rgx" userLabel="Points Label">
+                        <rect key="frame" x="72" y="33" width="295" height="60"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                        <color key="textColor" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="💩" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O42-om-RP1">
+                        <rect key="frame" x="20" y="30" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="4eU-Lh-EYs"/>
+                            <constraint firstAttribute="width" constant="40" id="lke-Cc-xhC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="PjF-fy-Rgx" secondAttribute="trailing" constant="8" id="95t-Ue-oYc"/>
+                    <constraint firstItem="O42-om-RP1" firstAttribute="centerY" secondItem="aY4-QE-lCA" secondAttribute="centerY" id="Awu-am-Q4H"/>
+                    <constraint firstItem="RxG-QU-zQs" firstAttribute="leading" secondItem="O42-om-RP1" secondAttribute="trailing" constant="12" id="Eri-34-84Z"/>
+                    <constraint firstAttribute="trailing" secondItem="RxG-QU-zQs" secondAttribute="trailing" constant="8" id="FwQ-nh-Kij"/>
+                    <constraint firstItem="RxG-QU-zQs" firstAttribute="top" secondItem="aY4-QE-lCA" secondAttribute="top" constant="8" id="HPq-fe-M81"/>
+                    <constraint firstAttribute="bottom" secondItem="PjF-fy-Rgx" secondAttribute="bottom" constant="8" id="NYf-hJ-CC2"/>
+                    <constraint firstItem="PjF-fy-Rgx" firstAttribute="top" secondItem="RxG-QU-zQs" secondAttribute="bottom" constant="4" id="jFE-IX-2wj"/>
+                    <constraint firstItem="O42-om-RP1" firstAttribute="leading" secondItem="aY4-QE-lCA" secondAttribute="leading" constant="20" id="vku-Bb-Bqd"/>
+                    <constraint firstItem="PjF-fy-Rgx" firstAttribute="leading" secondItem="O42-om-RP1" secondAttribute="trailing" constant="12" id="x44-XY-YJm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="clickbaitEmoji" destination="O42-om-RP1" id="4dm-QB-y94"/>
+                <outlet property="pointsLabel" destination="PjF-fy-Rgx" id="OUK-XX-aNn"/>
+                <outlet property="titleLabel" destination="RxG-QU-zQs" id="ioL-Rc-3yt"/>
+            </connections>
+            <point key="canvasLocation" x="34.5" y="74.5"/>
+        </tableViewCell>
+    </objects>
+</document>
